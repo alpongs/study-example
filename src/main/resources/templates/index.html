@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<table class="tb_col">
+  <tr>
+    <th>제목</th>
+    <th>URL</th>
+    <th>이름</th>
+    <th>장르</th>
+  </tr>
+  <tr th:each="mu : ${data}">
+    <td th:text="${mu.title}"></td>
+    <td th:text="${mu.imageUrl}"></td>
+    <td th:text="${mu.name}"></td>
+    <td th:text="${mu.genre}"></td>
+  </tr>
+</table>
+</body>
+</html>
